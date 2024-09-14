@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.hero {
+    background: url("./Images/calculator.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25rem 0;
+}
+/* Default Style */
+.bg {
+    background-color: lightgray;
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.bg:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* Row 5 (Display) */
+.display {
+    background-color: rgb(125, 140, 115);
+    text-align: right;
+    color: black;
+    font-size: 3em;
+    font-family: 'Digital Numbers', sans-serif;                                         
+    font-weight: 900;
+    border: 15px solid rgb(41, 40, 40);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/* Flex Container */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    list-style: none;
+    height: 100%;
+    padding: 0.15em 0;
+    margin: 0 0.25em;
+    gap: 0.25em;
+}
+/* Row 4 (Clear) */
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    height: 100%;
+}
+/* Rows 3-1 (Numbers 9-1) */
+.b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    height: 100%;
+}
+
+.b:last-child {
+    background-color: rgb(179, 122, 16);
+    color: white;
+}
+/* Row 0 */
+.c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 75%;
+    height: 100%;
+}
+/* Button Effects */
+.btn {
+    background-color: rgb(207, 207, 207);
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    font-family: 'Space Mono', monospace;
+    font-weight: 900;
+    cursor: pointer;
+    /* These two alone create the round style, remove them to default to square style */
+    border: 0;
+    border-radius: 0.75em;
+    outline: 0;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn:hover {
+    opacity: 0.7;
+    background: rgb(179, 122, 16);
+    color: white;
+}
+
+.btn:active {
+    background-color: white;
+    color: rgb(179, 122, 16)
+}
